@@ -12,19 +12,19 @@ module.exports = {
     navbar: {
       title: 'InternAloha',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'InternAloha Logo',
+        src: 'img/internaloha-logo.png',
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/overview/motivation',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Documentation',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/internaloha',
           label: 'GitHub',
           position: 'right',
         },
@@ -33,51 +33,12 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `InternAloha is sponsored by:<br/>
+                  <a href='http://csdl.ics.hawaii.edu'>Collaborative Software Development Laboratory</a><br/>
+                  <a href='http://www.ics.hawaii.edu'>Department of Information and Computer Sciences</a><br/>
+                  <a href='http://www.hawaii.edu'>University of Hawaii</a><br/>
+                  with funding from the National Science Foundation (Awards 1829542, 2025112)`,
     },
   },
   presets: [
