@@ -1,6 +1,6 @@
 ---
 title: InternBit Needs Assessment
-sidebar_label: InternBit Needs Assessment
+sidebar_label: Needs Assessment
 ---
 
 In June, 2020, a 12 question survey was distributed to ICS Students through a combination of a RadGrad newsletter, a posting to the ACM Manoa discord server, and an email to the ICS student mailing lists. Here is a summary of the results:

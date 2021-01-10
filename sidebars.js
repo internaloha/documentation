@@ -5,13 +5,37 @@ module.exports = {
         'overview/needs-assessment',
         'overview/evaluation',
     ],
-    'User Guide': [
-        'users/overview'
-    ],
-
     'Developer Guide': [
         'developers/overview',
         'developers/tech-stack',
+      {
+        type: 'category',
+        label: 'Installation',
+        items: [
+          'developers/installation/install-scrapers',
+          'developers/installation/install-ui',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Checklists',
+        items: [
+          'developers/checklists/overview',
+          'developers/checklists/architecture-checklist',
+          'developers/checklists/design-checklist',
+          'developers/checklists/js-eslint-checklist',
+          'developers/checklists/react-checklist',
+          'developers/checklists/testing-checklist',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Review',
+        items: [
+          'developers/review/overview',
+          'developers/review/review-process',
+        ],
+      },
       {
         type: 'category',
         label: 'User Interface',
