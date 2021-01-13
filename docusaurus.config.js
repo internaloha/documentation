@@ -9,31 +9,18 @@ module.exports = {
   organizationName: 'internaloha', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
   themeConfig: {
-    navbar: {
-      title: 'InternAloha',
-      logo: {
-        alt: 'InternAloha Logo',
-        src: 'img/internaloha-logo.png',
-      },
+    navbar: { title: 'InternAloha', logo: { alt: 'InternAloha Logo', src: 'img/internaloha-logo.png', },
       items: [
-        {
-          to: 'docs/overview/motivation',
-          activeBasePath: 'docs',
-          label: 'Documentation',
-          position: 'right',
-        },
-        {to: 'blog', label: 'Blog', position: 'right' },
-        {
-          href: 'https://github.com/internaloha',
-          label: 'GitHub',
-          position: 'right',
-        },
+        { to: 'docs/overview/motivation', activeBasePath: 'docs', label: 'Documentation', position: 'right', },
+        { to: 'blog', label: 'Blog', position: 'right' },
+        { href: 'https://github.com/internaloha', label: 'GitHub', position: 'right', },
+        { href: 'https://github.com/internaloha/internaloha/projects/3', label: 'Project Board', position: 'right'},
+
       ],
     },
     footer: {
       style: 'dark',
-      links: [
-      ],
+      links: [],
       copyright: `InternAloha is sponsored by:<br/>
                   <a href='http://csdl.ics.hawaii.edu'>Collaborative Software Development Laboratory</a><br/>
                   <a href='http://www.ics.hawaii.edu'>Department of Information and Computer Sciences</a><br/>

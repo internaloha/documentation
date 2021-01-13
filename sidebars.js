@@ -57,7 +57,8 @@ module.exports = {
         'documentation/use-mdx',
     ],
     'About Us': [
-        'about/team'
+        'about/team',
+        'about/spring-2021',
     ]
   },
 };
