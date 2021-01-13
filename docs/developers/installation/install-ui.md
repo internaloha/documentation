@@ -4,10 +4,6 @@ title: Install UI
 
 Here is how to install the InternAloha site for development, and how to deploy it for evaluation.
 
-## Table of contents
-* [Installation](#installation)
-* [Deploying the Site](#deploying-the-site)
-
 ## Installation
 
 To install the system, first [install NPM](https://www.npmjs.com/get-npm).
