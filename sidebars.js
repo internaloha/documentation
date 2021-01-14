@@ -21,7 +21,6 @@ module.exports = {
         label: 'Checklists',
         items: [
           'developers/checklists/overview',
-          'developers/checklists/architecture-checklist',
           'developers/checklists/design-checklist',
           'developers/checklists/js-eslint-checklist',
           'developers/checklists/react-checklist',

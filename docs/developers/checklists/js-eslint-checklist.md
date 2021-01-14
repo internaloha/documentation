@@ -18,39 +18,61 @@ React components should be pascalcase starting with a capital letter.
 Functions and arrow functions should be camelcase starting with a lowercase letter.
   * Example: findUser
 
-Filenames for classes and React components should follow the rules for the classes or components.
-  * Example: AcademicView.tsx
+Filenames for classes, scrapers, and React components should follow the rules for the classes or components.
+  * Example: AcademicView.tsx, Acm.js, Apple.js, ZipRecruiter.js
 
 Filenames for helpers should be lowercase with dashes between words. These files should be in a utilities directory.
   * Example: ui/pages/utilities/explorer-helpers.ts
 
+Filenames for scraper data should be lowercase, with dashes as necessary for multi-word files.  Periods used to create "categories" of files (i.e. "canonical", "parsed", etc.
+  * Example: apple.canonical.data.json. i-hire-tech.canonical.data.json, usa-cities.json.
+
 Directory names are lowercase with dashes between words.
   * Example: ui/components/students/item-view
 
-### JS-03: Use the spread operator when appropriate.
-
-Can you use the spread operator?
-
-### JS-04: Use object deconstruction when appropriate.
-
-Can you use object deconstruction?
-
-### JS-05: Use arrow functions when appropriate.
-
-Can you use arrow functions? Note that arrow functions are normally better, except in Mocha tests.
-
-### JS-06: Avoid lodash map, filter, etc.
+### JS-02: Avoid lodash map, filter, etc.
 
 ES6 includes many of the lodash functions. Use the built-in function rather than the lodash version when possible.
 
-### JS-07: Avoid console.log
+### JS-03: Avoid console.log
 
 Console.log is useful for certain situations in development. All console.log statements should be commented out in master.
 
+We should consider adopting a lightweight logging package such as [js-logger](https://www.npmjs.com/package/js-logger). That way we can toggle log messages in and out as needed.
 
-### JS-08: Use JSDoc (TSDoc) comments appropriately.
+### JS-04: Avoid Immediately Invoked Async Function Expressions
 
-When a comment starts with '/**', it will be processed by JSDoc (or TSDoc). Please ensure those comments are appropriate for inclusion.
+Some scrapers contain code like this:
+
+```js
+(async () => {
+  try {
+    await playTest('https://angel.co/login');
+
+  } catch (err) {
+    console.log('Our Error: ', err.message);
+  }
+  //process.exit(1);
+})();
+```
+
+The effect of this code is to define a function and immediately invoke it.  This is a little hard for new JS developers to understand. Replace with a more simple approach that defines a "main" function and invokes it:
+
+```js
+async function main() {
+ try {
+     await playTest('https://angel.co/login');
+
+   } catch (err) {
+     console.log('Our Error: ', err.message);
+   }
+   //process.exit(1);
+ }
+}
+main();
+```
+
+For more information, see [IIAFE](https://2ality.com/2016/10/async-function-tips.html#immediately-invoked-async-function-expressions).
 
 ## ESLint
 
