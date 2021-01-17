@@ -52,6 +52,7 @@ To run a scraper, invoke an npm script:
 |  `npm run aexpress` |  https://jobs.americanexpress.com/jobs | |
 |  `npm run angellist` |  https://angel.co/ | Login required |
 |  `npm run apple` |  https://jobs.apple.com |
+|  `npm run glassdoor` |  https://www.glassdoor.com |
 |  `npm run ihiretechnology` |  https://www.ihiretechnology.com |
 |  `npm run idealist computer science` |  https://www.idealist.org | Search term required
 |  `npm run indeed` |  https://www.indeed.com |
