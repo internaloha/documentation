@@ -53,6 +53,8 @@ Once your documentation is just exactly perfect, you'll want to publish your cha
 
 To do this, make sure GIT_USER is set, then run `npm run deploy`. For more information, see [Deploying to GitHub Pages](https://v2.docusaurus.io/docs/deployment#deploying-to-github-pages).
 
+This does not commit your changes to the source files, so be sure to do that after deploying the site.
+
 ## Advanced usage
 
 If you want to do more advanced changes to the website, you'll probably want to consult the [docusaurus2 documentation](https://v2.docusaurus.io/docs/introduction).

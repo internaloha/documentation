@@ -6,20 +6,12 @@ Here is how to install the InternAloha site for development, and how to deploy i
 
 ## Installation
 
-To install the system, first [install NPM](https://www.npmjs.com/get-npm).
+To install the system, first [install NPM](https://www.npmjs.com/get-npm), then checkout [InternAloha](https://github.com/internaloha/internaloha) from GitHub.
 
-Second, download your newly created repository to your computer.
-
-Third, type ``npm install`` to download the correct libraries. The repo is split up in the
-following way:
-- scraper: contains all the scrapers and scraped data
-- src: the actual static site
-
-Each of the folder has its own ``package.json``. This installation is regarding the UI so cd into ``\src``
+Next, cd into internaloha\src and run ``npm install``:
 
 ```
-
-C:\Users\JenniferHsu\Documents\GitHub\internaloha\src>npm install
+$ npm install
 npm WARN eslint-config-airbnb@18.2.0 requires a peer of eslint-plugin-import@^2.21.2 but none is installed. You must install peer dependencies yourself.
 npm WARN eslint-config-airbnb@18.2.0 requires a peer of eslint-plugin-jsx-a11y@^6.3.0 but none is installed. You must install peer dependencies yourself.
 npm WARN eslint-config-airbnb@18.2.0 requires a peer of eslint-plugin-react@^7.20.0 but none is installed. You must install peer dependencies yourself.
@@ -42,11 +34,12 @@ found 2 vulnerabilities (1 low, 1 high)
   run `npm audit fix` to fix them, or `npm audit` for details
 ```
 
+## Running the site locally
 
 If all goes as planned, you should now be able to run `npm start` to view the system in your browser at http://localhost:3000/:
 
 ```
-$npm start
+$ npm start
 
 Compiled successfully!
 

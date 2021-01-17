@@ -4,14 +4,14 @@ title: Install Scrapers
 
 Here is how to install the InternAloha scrapers for development and how to run them and integrate the results into the UI.
 
-## How to Install Scrapers
+## Install scrapers
 
-To install the system, first [install NPM](https://www.npmjs.com/get-npm).
+To install the system, first [install NPM](https://www.npmjs.com/get-npm), then checkout [InternAloha](https://github.com/internaloha/internaloha) from GitHub.
 
-Using a newly created repository, cd into \scraper\scrapers and run ``npm install`` to download the correct libraries the scrapers' ``package.json`` file. 
+Next, cd into internaloha\scraper\scrapers and run ``npm install``:
 
 ```
-C:\Users\ajrui\OneDrive\Documents\GitHub\internaloha\scraper\scrapers>npm install
+$ npm install
 npm WARN @reach/router@1.3.4 requires a peer of react@15.x || 16.x || 16.4.0-alpha.0911da3 but none is installed
 . You must install peer dependencies yourself.
 npm WARN @reach/router@1.3.4 requires a peer of react-dom@15.x || 16.x || 16.4.0-alpha.0911da3 but none is insta
@@ -40,62 +40,46 @@ audited 774 packages in 3.257s
 found 0 vulnerabilities
 ```
 
-If done correctly, it should be possible to run the various scraper scripts within the /scrapers directory.
+It should now be possible to run the various scraper scripts within the /scrapers directory.
 
-## Running A Scraper 
+## Running a scraper
 
-Different scripts for each scraper can be found within the ``package.json`` file under ``scraper`` folder. 
+To run a scraper, invoke an npm script:
 
-```
+| Script | Site | Notes |
+| ------- | ----- | --- |
+|  `npm run acm` |  https://jobs.acm.org | |
+|  `npm run aexpress` |  https://jobs.americanexpress.com/jobs | |
+|  `npm run angellist` |  https://angel.co/ | Login required |
+|  `npm run apple` |  https://jobs.apple.com |
+|  `npm run ihiretechnology` |  https://www.ihiretechnology.com |
+|  `npm run idealist computer science` |  https://www.idealist.org | Search term required
+|  `npm run indeed` |  https://www.indeed.com |
+|  `npm run linkedin` |  https://www.linkedin.com/jobs |
+|  `npm run monster computer science` |  https://www.monster.com | Search term required
+|  `npm run simplyhired computer science` |  https://www.simplyhired.com/ | Search term required
+|  `npm run stackoverflow` |  https://stackoverflow.com/jobs |
+|  `npm run ziprecruiter` |  https://www.ziprecruiter.com/ |
 
-"scripts": {
-    "test": "node test.js",
-    "eject": "react-scripts eject",
-    "lint": "eslint --quiet --ext .jsx --ext .js ./src",
-    "statistics": "node scrapers/statistics.js",
-    "internships": "node scrapers/internships.js",
-    "simply": "node scrapers/simplyHired.js",
-    "zip": "node scrapers/zipRecruiter.js",
-    "idealist": "node scrapers/idealist.js",
-    "indeed": "node scrapers/indeed.js",
-    "monster": "node scrapers/monster.js",
-    "linkedin": "node scrapers/linkedin.js",
-    "single-parse": "node scrapers/single_parser.js",
-    "youtern": "node scrapers/Youtern.js",
-    "cool": "node scrapers/Cooworks.js",
-    "stackoverflow": "node scrapers/stackoverflow.js",
-    "glassdoor": "node scrapers/Glassdoor.js",
-    "ihire": "node scrapers/iHireTechnology.js",
-    "angellist": "node scrapers/angellist.js",
-    "acm": "node scrapers/acm.js",
-    "coolworks": "node scrapers/Coolworks.js",
-    "aexpress": "node scrapers/aexpress.js",
-    "hn": "node scrapers/hn.js",
-    "apple": "node scrapers/apple.js",
-    "multi-parse": "node scrapers/multi_parser.js && node scrapers/statistics.js"
-  },
-  
-```
-
-In order to run a scraper, cd into \scrapers and ``npm run -script title-`` 
-
-For example, running the scraper for LinkedIn is as follows:
+In order to run a scraper, cd into \scrapers and invoke the desired script. For example, running the scraper for LinkedIn is as follows:
 
 ```
-
-C:\Users\ajrui\OneDrive\Documents\GitHub\internaloha\scraper\scrapers>npm run linkedin
-
+$ npm run linkedin
 ```
-This should bring up a Chromium window that will start the scraping process. After fully scraping a website, the results can be found within the \scraper\data\canonical folder
+This should bring up a Chromium window that will start the scraping process. After fully scraping a website, the results can be found within the \scraper\data\canonical folder.
 
-## Displaying Scraped Data to Website UI
+## Parsing scraped data for display
 
-All newly scraped data must be parsed using ```npm run multi-parse``` to transfer into the website database. This script goes through all canonical data and uses NLP/Regex to extract relevant information about skills, qualifications, compensation, and start/end date for each internship posting. It also ensures that each file is the correct format so it does not break the site. Once it is done, the new files are saved under ```/src/src/data``` and statistics are updated.  
+### npm run multi-parse
 
-**Single-Parse:** ```npm run single-parse```
+All newly scraped data must be parsed using `npm run multi-parse` to convert it into a form appropriate for display in the website. This script goes through the data and extracts relevant information about skills, qualifications, compensation, and start/end date for each internship posting. It also ensures that each file is in the correct format. Results are stored in `/src/src/data` and statistics are updated.
+
+### npm run single-parse
+
 Extracts relevant information about skills, qualifications, compensation, and start/end date for
  a single file. At the moment, you must change the variables to parse the file you want:
- ```jsx harmony
+
+ ```jsx
 const rawData = fs.readFileSync('./data/canonical/angellist.canonical.data.json');
 const text = JSON.parse(rawData);
 ...
@@ -105,9 +89,9 @@ fs.writeFile('data/parsed/angellist.parsed.data.json',
         console.log('\nData successfully written!')));
 ```
 
-**Statistics:** ```npm run statistics``` 
-This script provides relevant information about each site that was scraped. The numbers
- correspond to how many fields were **not** empty. 
+### npm run statistics
+
+This script creates a file containing relevant information about each site that was scraped. The numbers correspond to how many fields were **not** empty.
  
 ```json
 {
@@ -129,8 +113,8 @@ This script provides relevant information about each site that was scraped. The 
 }
 ``` 
   
-You have to manually add the newly listed site
-  so its statistics are generated.   
+You have to manually add any new site so its statistics are generated.
+
 ```javascript
 const zipData = readFile('./data/parsed/ziprecruiter.parsed.data.json');
 const simplyData = readFile('./data/parsed/simplyhired.parsed.data.json');
@@ -147,83 +131,65 @@ statistics.push(
 ...
 ```
 
-## Current Scrapers
+## Scraper script details
 
-The following scrapers require a search query parameter (Eg. ```npm run simply computer science```): 
-- SimplyHired
-- Internships (Chegg)
-- Monsters.com
-- Idealist
-
-The following scrapers do not require any parameters:
-- Glassdoor
-- Stackoverflow
-- LinkedIn
-- YouTern
-- iHireTechnology
-- Indeed
-- AmericanExpress
-- ACM
-- Apple
-- Coolworks
-
-The following scrapers require login in parameters:
-- AngelList
-
-
-**SimplyHired:** 
+### SimplyHired
  
- ```npm run simply [search query]```. For example:  ``npm run simply computer
- science``. Result from the run is available at: [simplyHiredData.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/simplyHired.canonical.data.json)
- * Current filters:
-    * Date Relevance: 10 days
-    * Any distance
- 
-**Idealist:**
+`npm run simply [search query]`. For example:  `npm run simply computer science`.
 
-```npm run idealist [search query]```. Result from the run is available at: [simplyHiredData.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/idealist.canonical.data.json)
+Result from the run is available at: [simplyHiredData.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/simplyHired.canonical.data.json)
+
+Current filters:
+  * Date Relevance: 10 days
+  * Any distance
+ 
+### Idealist
+
+`npm run idealist [search query]`
+
+Result from the run is available at: [simplyHiredData.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/idealist.canonical.data.json)
         
-**Internships (Chegg):** 
+### Internships (Chegg)
 
-```npm run internships [search query]```.  Result from the run is available
+`npm run internships [search query]`
+
+Result from the run is available
  at: [internships.data.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/internships.canonical.data.json)
-   * **At the moment it doesn't work because of the reCATPCHA issue**
-   * Unfortunately, [internships.com](https://www.internships.com/app/search) uses infinite scroll. Each internship
-       doesn't have an associated URL link (like zipRecruiter) to its page so I have to click back and
-        forth between the the listing and the main search page so it is slow. It takes roughly ~20
-         minutes to scrape 250 listings.
-   * Current filters:
-      * Hawaii
-      * Sorted by Date
 
-**Monsters.com:**
+Notes:
+  * At the moment it doesn't work because of the reCATPCHA issue.
+  * Unfortunately, [internships.com](https://www.internships.com/app/search) uses infinite scroll. Each internship doesn't have an associated URL link (like zipRecruiter) to its page so I have to click back and forth between the the listing and the main search page so it is slow. It takes roughly ~20 minutes to scrape 250 listings.
+  * Current filters:
+    * Hawaii
+    * Sorted by Date
 
-```npm run monster [search query]```. For example:  ``npm run monster computer
- science intern`` Result from the run is available at: [monster.data.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/monster.canonical.data.json)
-*  Current filters:
-   *  Only show jobs posted within last 30 days
+### Monsters.com
 
-**LinkedIn:** 
+```npm run monster [search query]```. For example:  ``npm run monster computer science intern``
+
+Results from the run is available at: [monster.data.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/monster.canonical.data.json)
+
+Current filters:
+  *  Only show jobs posted within last 30 days
+
+### LinkedIn
 
 Run ```npm run linkedin``` to start the script.
-           Result from the run is available at: [linkedin.data.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/linkedin.canonical.data.json)         
- * Filters:
-    * Only shows internships listed within last 30 days
-    * Only show those listed as internships
-    * Sorted by last posted
 
-**StackOverflow:** 
+Result from the run is available at: [linkedin.data.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/linkedin.canonical.data.json)
+
+Filters:
+  * Only shows internships listed within last 30 days
+  * Only show those listed as internships
+  * Sorted by last posted
+
+### StackOverflow
 
 Run ```npm run stackoverflow``` to start the script.
+
 Result from the run is available at: [stackoverflow.data.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/stackoverflow.canonical.data.json)
-                  
-**GlassDoor:**
 
-Run ```npm run glassdoor``` to start the script. Result from the run is available at: [stackoverflow
-.data.json](https://github.com/radgrad/internbit/blob/master/src/scrapers/data/canonical/glassdoor.canonical.data.json)
-
-
-## Building A Scraper
+## Creating a new scraper
 
 InternAloha uses puppeteer to direct through an instance of a website in order to scrap a website. A video to understand the basics of puppeteer and website scraping can be seen [here](https://youtu.be/IvaJ5n5xFqU).
 
