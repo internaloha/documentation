@@ -53,4 +53,10 @@ For example, here is a piece of code that is likely to be reuseable
 
 In the event that a file is not in use or under active development (for example, a scraper that has been abandoned), move it to the internaloha/archive directory. That way the code is still accessable in case we want to look at it later, but not in the active code base which is confusing.
 
+### Design-08: Modularize long code sections
+
+Avoid loops with bodies that are many (i.e. 100*) lines long.  Avoid functions with bodies that are many (i.e. 100+) lines long. Avoid try-catch blocks with bodies that are many (i.e. 100+) lines long.
+
+In these cases, try to extract functions that accomplish focused tasks and call a sequence of them instead. That should make the code easier to read.
+
 

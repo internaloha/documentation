@@ -74,6 +74,50 @@ main();
 
 For more information, see [IIAFE](https://2ality.com/2016/10/async-function-tips.html#immediately-invoked-async-function-expressions).
 
+### JS-05: Conserve editor window real estate.
+
+When there is no loss of readability, put code on a single line.
+
+For example, objects as parameters can often be collapsed onto a single line. For example, the following four lines of code:
+
+```
+await page.setViewport({
+  width: 1050,
+  height: 800,
+});
+```
+
+can be reduced to a single link of code, which is just as readable (if not more readable):
+
+```
+await page.setViewport({ width: 1050, height: 800 });
+```
+
+### JS-06: Don't use try-catch for control flow
+
+Throwning exceptions should be reserved for error conditions, not as a way to perform control flow. For example:
+
+```
+let nextPage = true;
+while (nextPage === true) {
+  try {
+    await page.waitForSelector('div[class="mux-search-results"]');
+    await page.click('a[id="loadMoreJobs"]');
+  } catch (e2) {
+    nextPage = false;
+  }
+}
+```
+
+This loop requires an error to be thrown.  Instead, check to see if the relevant link exists and set nextPage accordingly. Here's some pseudocode:
+
+```
+while (page.selectorExists('a[id="loadMoreJobs"]') {
+  await page.waitForSelector('div[class="mux-search-results"]');
+  await page.click('a[id="loadMoreJobs"]');
+}
+```
+
 ## ESLint
 
 ### ESLINT-01: No errors, avoid warnings.
