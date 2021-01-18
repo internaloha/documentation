@@ -118,6 +118,24 @@ while (page.selectorExists('a[id="loadMoreJobs"]') {
 }
 ```
 
+### JS-07: Prefer ternary operator
+
+If you see code like this:
+
+```
+const foo;
+if (bar === 12) {
+  foo = 'bar';
+} else {
+  foo = 'baz';
+}
+```
+
+Please rewrite these six lines of code into one:
+
+```
+const foo = (bar === 12) ? 'bar' : 'baz';
+```
 ## ESLint
 
 ### ESLINT-01: No errors, avoid warnings.
