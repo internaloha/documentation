@@ -6,9 +6,36 @@ sidebar_label: Design
 Practices concerning the high-level design of functions that is not specific to React, Typescript, or Javascript.
 
 
-### Design-01: Avoid deeply nested conditionals.
+### Design-01: Avoid deeply nested code.
 
-Are there multiple, deeply nested if/else blocks?
+Try to avoid nesting code more than 5 levels (i.e. 10 spaces of indentation). For example, here is an outline of some recent code:
+
+```
+function foo () {
+  try {
+    :
+    if () {
+      :
+      while () {
+        :
+        try {
+          :
+          try {
+            :
+            for () {
+              :
+              try {
+                // This code is indented 16 spaces!
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+```
+
+The solution is to refactor some of the nested code into separate function(s). This should make the code more readable. 
 
 ### Design-02: Eliminate dead code.
 
