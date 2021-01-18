@@ -35,7 +35,7 @@ function foo () {
   }
 ```
 
-The solution is to refactor some of the nested code into separate function(s). This should make the code more readable. 
+The solution is to refactor some of the nested code into separate function(s). This should make the code more readable.
 
 ### Design-02: Eliminate dead code.
 
