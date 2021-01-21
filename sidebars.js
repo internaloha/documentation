@@ -58,6 +58,7 @@ module.exports = {
     'About Us': [
         'about/team',
         'about/spring-2021',
+        'about/spring-2021-pilot-study',
     ]
   },
 };
