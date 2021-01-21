@@ -140,5 +140,5 @@ The home page can also provide some details on what sites are scraped, how many 
 
 The system might be more impactful if it helped the student to understand the level of match with their profile.
 
-First, if a student indicates an attribute (such as "local", or "paid") as required, then only those internships that satisfy those required conditions are "acceptable" and presented in the results. From the acceptable listings, a score is computing based upon the level of match. A score of "100" would be a perfect match. 
+First, if a student indicates an attribute (such as "local", or "paid") as required, then only those internships that satisfy those required conditions are "acceptable" and presented in the results. From the acceptable listings, a score is computing based upon the level of match. A score of "100" would be a perfect match.
 
