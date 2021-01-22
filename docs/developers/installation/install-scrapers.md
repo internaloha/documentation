@@ -58,9 +58,9 @@ To run a scraper, invoke an npm script:
 |  `npm run indeed` |  https://www.indeed.com |
 |  `npm run linkedin` |  https://www.linkedin.com/jobs |
 |  `npm run monster computer science` |  https://www.monster.com | Search term required
-|  `npm run simplyhired computer science` |  https://www.simplyhired.com/ | Search term required
+|  `npm run simply computer science` |  https://www.simplyhired.com/ | Search term required
 |  `npm run stackoverflow` |  https://stackoverflow.com/jobs |
-|  `npm run ziprecruiter` |  https://www.ziprecruiter.com/ |
+|  `npm run zip` |  https://www.ziprecruiter.com/ |
 
 In order to run a scraper, cd into \scrapers and invoke the desired script. For example, running the scraper for LinkedIn is as follows:
 
