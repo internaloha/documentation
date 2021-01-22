@@ -7,6 +7,12 @@ Javascript and ESLint best practices.
 
 ## Javascript
 
+### JS-00: Indentation and whitespace
+
+We use two space indentation.  Please avoid all whitespace inside function bodies.  Use whitespace to separate functions.
+
+To delineate logical sections within a function, instead of using whitespace, use a //  comment. For example, see the main() function in [acm.js](https://github.com/internaloha/internaloha/blob/master/scraper/scrapers/acm.js).
+
 ### JS-01: Name classes, components, files, and directories appropriately.
 
 Classes should be pascalcase starting with a capital letter.
