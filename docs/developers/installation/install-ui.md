@@ -2,6 +2,8 @@
 title: Install UI
 ---
 
+![ci-badge](https://github.com/internaloha/internaloha/workflows/internaloha-ui/badge.svg)
+
 Here is how to install the InternAloha site for development, and how to deploy it for evaluation.
 
 ## Installation
