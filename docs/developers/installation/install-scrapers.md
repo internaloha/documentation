@@ -2,7 +2,7 @@
 title: Install Scrapers
 ---
 
-![ci-badge](https://github.com/internaloha/internaloha/workflows/internaloha-scrapers/badge.svg)
+<a href="https://github.com/internaloha/internaloha/actions?query=workflow%3Ainternaloha-scrapers"><img src="https://github.com/internaloha/internaloha/workflows/internaloha-scrapers/badge.svg"/></a>
 
 Here is how to install the InternAloha scrapers for development and how to run them and integrate the results into the UI.
 
