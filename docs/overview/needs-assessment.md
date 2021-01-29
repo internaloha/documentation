@@ -19,19 +19,19 @@ So, on the one hand, these results mostly do not reflect the experience of lower
 
 44% of respondents said they were only able to find 1-5 relevant internship opportunities in the past 12 months. An additional 12% said they could not find any. Full results here (the "About 25%" answer is an error in the survey):
 
-<img src="/img/internbit/internbit-needs-assessment-1.png"/>
+<img src="/documentation/img/internbit-needs-assessment-1.png"/>
 
 This indicates that there is a clear opportunity for InternAloha to add value.  I think it is extremely unlikely that, for over half of ICS undergraduates, there are less than 6 relevant internship opportunities.
 
 Almost 40% of our undergraduates felt that they were not qualified for any of the internships they were interested in!
 
-<img src="/img/internbit/internbit-needs-assessment-2.png"/>
+<img src="/documentation/img/internbit-needs-assessment-2.png"/>
 
 This is an opportunity for InternAloha, as well as an opportunity for RadGrad. We need to use the combination to help students figure out how to become qualified (or at least have the self-representation as qualified.)
 
 About 44% of our undergrads found the Internship search experience to be "Difficult" or "Very Difficult":
 
-<img src="/img/internbit/internbit-needs-assessment-3.png"/>
+<img src="/documentation/img/internbit-needs-assessment-3.png"/>
 
 Once again, that shows a clear need for InternAloha, if it can actually make the process more simple.
 
@@ -43,7 +43,7 @@ Here are issues that students identified as problematic:
 
 When asking about the effectiveness of various sources, the responses were literally all over the map:
 
-<img src="/img/internbit/internbit-needs-assessment-4.png"/>
+<img src="/documentation/img/internbit-needs-assessment-4.png"/>
 
 This indicates to me that a consolidated, one-stop location for searching would be really useful to students.
 
