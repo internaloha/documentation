@@ -1,5 +1,5 @@
 ---
-title: Overview of InternBit Reviews
+title: Overview of InternAloha Reviews
 sidebar_label: Overview
 ---
 
@@ -11,7 +11,7 @@ Reviews serve several purposes:
 
   2. **Improve the consistency of the codebase.** In some cases, are several competing "best practices", and so we want to ensure that the codebase observes the same one in all places.
 
-  3. **Provide a mechanism to onboard developers.** New developers might be somewhat inexperienced with JS, React, and Semantic UI. InternBit is a somewhat complicated system.  It is unreasonable to expect developers to read through our documentation and instantly produce "perfect" code. Reviews are a way for more experienced developers to help new developers come up to speed as quickly as possible.
+  3. **Provide a mechanism to onboard developers.** New developers might be somewhat inexperienced with JS, React, and Semantic UI. InternAloha is a somewhat complicated system.  It is unreasonable to expect developers to read through our documentation and instantly produce "perfect" code. Reviews are a way for more experienced developers to help new developers come up to speed as quickly as possible.
 
   4. **Capture additional or modify existing best practices, design patterns, and anti-patterns.** Reviews are also the best time for developers to reconsider existing coding and design standards, or propose new ones. This is because when you are doing a review, you are not trying to implement new functionality, and so your attention is focused on how existing code works and whether that is the most appropriate way to do it. Our existing best practices, design patterns, design anti-patterns and checklists are always a work in progress and always subject to modification as we learn more.
 

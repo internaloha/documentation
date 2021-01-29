@@ -1,5 +1,5 @@
 ---
-title: InternBit Needs Assessment
+title: InternAloha Needs Assessment
 sidebar_label: Needs Assessment
 ---
 
@@ -11,7 +11,7 @@ There were 28 responses to the request.  Given there are approximately 400 under
 
 Out of the 28 responses, approximately 20 (71%) had completed both ICS 314 and ICS 311.  Over 60% identified themselves as either a first semester senior or a senior graduating this semester.
 
-So, on the one hand, these results mostly do not reflect the experience of lower-level undergraduates, who are a main target for InternBit. On the other hand, the results do reflect what end-stage undergraduates are currently experiencing, which is valuable for identifying ways that InternBit can address gaps in the current internship search process.
+So, on the one hand, these results mostly do not reflect the experience of lower-level undergraduates, who are a main target for InternAloha. On the other hand, the results do reflect what end-stage undergraduates are currently experiencing, which is valuable for identifying ways that InternAloha can address gaps in the current internship search process.
 
 ## Internship search experience
 
@@ -21,19 +21,19 @@ So, on the one hand, these results mostly do not reflect the experience of lower
 
 <img src="/img/internbit/internbit-needs-assessment-1.png"/>
 
-This indicates that there is a clear opportunity for InternBit to add value.  I think it is extremely unlikely that, for over half of ICS undergraduates, there are less than 6 relevant internship opportunities.
+This indicates that there is a clear opportunity for InternAloha to add value.  I think it is extremely unlikely that, for over half of ICS undergraduates, there are less than 6 relevant internship opportunities.
 
 Almost 40% of our undergraduates felt that they were not qualified for any of the internships they were interested in!
 
 <img src="/img/internbit/internbit-needs-assessment-2.png"/>
 
-This is an opportunity for InternBit, as well as an opportunity for RadGrad. We need to use the combination to help students figure out how to become qualified (or at least have the self-representation as qualified.)
+This is an opportunity for InternAloha, as well as an opportunity for RadGrad. We need to use the combination to help students figure out how to become qualified (or at least have the self-representation as qualified.)
 
 About 44% of our undergrads found the Internship search experience to be "Difficult" or "Very Difficult":
 
 <img src="/img/internbit/internbit-needs-assessment-3.png"/>
 
-Once again, that shows a clear need for InternBit, if it can actually make the process more simple.
+Once again, that shows a clear need for InternAloha, if it can actually make the process more simple.
 
 Here are issues that students identified as problematic:
 
@@ -74,9 +74,9 @@ This indicates gaps in our curriculum (Python, .NET) as well as opportunities to
 
 This needs assessment survey has accomplished two important purposes:
 
-  1.  It provides data that supports our hypothesis that a service like InternBit, if effectively implemented, could provide a valuable service to our students by addressing problems (finding internships, getting qualified) that are associated with an activity that 90% of them deem important.
+  1.  It provides data that supports our hypothesis that a service like InternAloha, if effectively implemented, could provide a valuable service to our students by addressing problems (finding internships, getting qualified) that are associated with an activity that 90% of them deem important.
 
-  2. It provides a baseline for what upper level ICS students think about the internship process. After InternBit is implemented, we could use a survey with many of the same questions to provide evidence regarding the effectiveness of InternBit.
+  2. It provides a baseline for what upper level ICS students think about the internship process. After InternAloha is implemented, we could use a survey with many of the same questions to provide evidence regarding the effectiveness of InternAloha.
 
 Note that this survey has not been effective in gathering evidence about the issues of lower level ICS students.
 

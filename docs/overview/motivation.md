@@ -3,7 +3,7 @@ title: Motivation
 ---
 
 ## Overview
-The InternBit project results from student feedback regarding our original implementation of "Internship" opportunities in RadGrad.  RadGrad can only provide information about a relatively small number of "curated" local internships, since each opportunity must be manually entered into the system by a faculty member, advisor, or administrator. After deployment, use, and evaluation of RadGrad during year one, we discovered that our current support for internships does not meet the needs of students, but could be augmented to provide a more scalable and efficient solution.
+The InternAloha project results from student feedback regarding our original implementation of "Internship" opportunities in RadGrad.  RadGrad can only provide information about a relatively small number of "curated" local internships, since each opportunity must be manually entered into the system by a faculty member, advisor, or administrator. After deployment, use, and evaluation of RadGrad during year one, we discovered that our current support for internships does not meet the needs of students, but could be augmented to provide a more scalable and efficient solution.
 
 ## Barriers
 
@@ -27,7 +27,7 @@ The goals for this project include:
 
 **Design, implement, and evaluate a student UI.** The student UI enables students to see the internship profile extracted from their RadGrad data, modify and correct it as necessary, and then request that the engine send them notifications of relevant internships as they become available. The student UI should also provide a way for students to give feedback on the quality of the recommendations, which can yield further information about issues with the parsing process.
 
-**Design and implement an evaluation of the overall effectiveness of the system.** We will investigate two primary research questions in this project: (1) Does InternBit improve the ability of students to find internships of interest?  We can test this hypothesis via an experiment where students first look for internships unaided by the system, then use the system to see if they uncover additional internships. The occurrence of either false positives or false negatives can provide insight into the capability of the system.  (2) Does InternBit change the behavior of students with respect to their degree experience? This is the more fundamental goal: by decreasing the ``friction'' for finding internships of interest, do students learn about requirements earlier in their degree program, and plan to acquire the necessary skills as part of their degree experience?
+**Design and implement an evaluation of the overall effectiveness of the system.** We will investigate two primary research questions in this project: (1) Does InternAloha improve the ability of students to find internships of interest?  We can test this hypothesis via an experiment where students first look for internships unaided by the system, then use the system to see if they uncover additional internships. The occurrence of either false positives or false negatives can provide insight into the capability of the system.  (2) Does InternAloha change the behavior of students with respect to their degree experience? This is the more fundamental goal: by decreasing the ``friction'' for finding internships of interest, do students learn about requirements earlier in their degree program, and plan to acquire the necessary skills as part of their degree experience?
 
 
 
