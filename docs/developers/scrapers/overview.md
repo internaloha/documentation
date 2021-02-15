@@ -8,8 +8,6 @@ title: Overview
 
 The code is stored under ``/scrapers/main.js``.
 
-**NOTE:** Only works in ``issue-105`` at the moment.
-
 | Script | Site |
 | ------- | ----- |
 |  `npm run scrapers dev open` |  Runs the script in development mode and opens browser for each scraper. Outputs all Logging info.  | 
@@ -44,7 +42,7 @@ Allows us to specify whether or not to run in headless or not when using top lev
 ```javascript
   // in the main function for scrapers, add the parameter headless
   async function main(headless) {
-    // pass openBrowser parameter to startBrowser
+    // pass headless parameter to startBrowser
     [browser, page] = await startBrowser(headless);
     // some other code
   }
