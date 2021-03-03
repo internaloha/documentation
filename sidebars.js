@@ -8,6 +8,7 @@ module.exports = {
     'Developer Guide': [
         'developers/overview',
         'developers/tech-stack',
+        'developers/weekly-management',
       {
         type: 'category',
         label: 'Installation',
