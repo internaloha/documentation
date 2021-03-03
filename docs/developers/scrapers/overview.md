@@ -2,72 +2,14 @@
 title: Overview
 ---
 
-## Top Level Interface
+The goal of InternAloha scrapers is to collect information about computer science internships from as many online resources as possible.
 
-### Commands
+Currently, this process is semi-automated.  On a regular basis, hopefully weekly, a member of the InternAloha team will invoke the scraper programs.  These programs collect information from various sites, and represent it in a "canonical" format.  T
 
-The code is stored under ``/scrapers/main.js``.
+This format is made available to the InternAloha web application and used to display internship information to users.
 
-| Script | Site |
-| ------- | ----- |
-|  `npm run scrapers dev open` |  Runs the script in development mode and opens browser for each scraper. Outputs all Logging info.  | 
-|  `npm run scrapers dev close` |  Runs the script in development mode, does not open up browser. Outputs all Logging info. | 
-|  `npm run scrapers production` |  Runs the script in production mode, does not open up browser. Only outputs logging error.| 
+The process of collecting internship information cannot be completely automated for the following reasons:
 
+* The format of internship sites changes regularly.  A developer must monitor the output for problems and make fixes.
 
-Explanation of how the top level interface works:
-
-* Each scraper definition file exports a single async function that runs the scraper.
-* ``main.js's main`` loops through all scraper definition functions, invoking them, waits for all of the results to 
-  be done. 
-* Once all the scrapers are done, postprocessing is done and final data is written in a UI-ready format.
-
-## Development mode
-* Depending on args passed (open/close), all scrapers will either open or not open a browser.
-* Produces logging output.
-* Does not require a control-c to terminate.
-* Does all necessary post-processing of the data.
-
-## Production Mode 
-
-* Runs all the scripts without opening up a browser.
-* Does not produce any logging output, unless they are errors.
-* Does not require a control-c to terminate.
-* Does all necessary post-processing of the data.
-
-Allows us to specify whether to run in headless or not when using top level command line.
-```javascript
-  // in the main function for scrapers, add the parameter headless
-  async function main(headless) {
-    // pass headless parameter to startBrowser
-    [browser, page] = await startBrowser(headless);
-    // some other code
-  }
-```
-
-The following code blocks enables us to individually test each scraper as well.
-
-Added at the very end of the code:
-```javascript
-if (process.argv.includes('main')) {
-  const headless = checkHeadlessOrNot(process.argv);
-  if (headless === -1) {
-    Logger.error('Invalid argument supplied, please use "open", or "close"');
-    process.exit(0);
-  }
-  main(headless);
-}
-export default main;
-
-```
-
-In ``package.json``, change the script to include main. For example: 
-```
-  "scripts": {
-    "acm": "node scrapers/acm.js main",
-    "aexpress": "node scrapers/aexpress.js main",
-    "apple": "node scrapers/apple.js main",
-    "scrapers": "node scrapers/main.js"
-  },
-```
-
+* Some sites contain recaptchas to prevent completely automated browsing. In this case, a developer must be on hand to prove the the user is not a robot.

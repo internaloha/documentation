@@ -6,24 +6,7 @@ sidebar_label: Weekly Management
 To understand the management issues surrounding InternAloha, we should run the scrapers and re-deploy the site with 
 the updated listings once a week. It would also be good for this task to rotate to different members of the group, to ensure that multiple people can do it, and to ensure that there is a good documentation for this management.
 
-## Set up 
-Make a copy of `sample.config.json` and rename it to `config.json`. Some scrapers like angellist or Student 
-Opportunity Center requires credentials. Make an account on those sites and fill in the credentials in `config.json`.
-`config.json` will **not** be committed to the repository.
 
-Example:
-```json
-{
-  "angellist": {
-    "user": "johnfoo@testing.com",
-    "password": "changeme"
-  },
-  "studentOpportunityCenter": {
-    "user": "johnfoo@testing.com",
-    "password": "changeme"
-  }
-}
-```
 
 Make sure to run `npm install` under `/scrapers` to install the dependencies if you haven't already done so.
 

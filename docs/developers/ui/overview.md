@@ -2,4 +2,4 @@
 title: Overview
 ---
 
-Overview of the UI documentation goes here.
+The InternAloha User Interface is a web application written in React.

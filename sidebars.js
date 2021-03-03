@@ -1,22 +1,33 @@
 module.exports = {
   someSidebar: {
     Overview: [
-        'overview/motivation',
-        'overview/needs-assessment',
-        'overview/evaluation',
+      'overview/motivation',
+      'overview/needs-assessment',
+      'overview/evaluation',
     ],
     'Developer Guide': [
-        'developers/overview',
-        'developers/tech-stack',
-        'developers/weekly-management',
+      'developers/overview',
+      'developers/tech-stack',
       {
         type: 'category',
-        label: 'Installation',
+        label: 'Scrapers',
         items: [
-          'developers/installation/install-scrapers',
-          'developers/installation/install-ui',
+          'developers/scrapers/overview',
+          'developers/scrapers/installation',
+          'developers/scrapers/running',
         ],
       },
+      {
+        type: 'category',
+        label: 'User Interface',
+        items: [
+          'developers/ui/overview',
+          'developers/ui/installation',
+          'developers/ui/running',
+          'developers/ui/deploying',
+        ],
+      },
+      'developers/weekly-management',
       {
         type: 'category',
         label: 'Checklists',
@@ -36,30 +47,16 @@ module.exports = {
           'developers/review/review-process',
         ],
       },
-      {
-        type: 'category',
-        label: 'User Interface',
-        items: [
-          'developers/ui/overview',
-        ],
-      },
-      {
-        type: 'category',
-        label: 'Scrapers',
-        items: [
-          'developers/scrapers/overview',
-        ],
-      },
     ],
     Documentation: [
-        'documentation/manage-this-site',
-        'documentation/write-markdown',
-        'documentation/use-mdx',
+      'documentation/manage-this-site',
+      'documentation/write-markdown',
+      'documentation/use-mdx',
     ],
     'About Us': [
-        'about/team',
-        'about/spring-2021',
-        'about/spring-2021-pilot-study',
+      'about/team',
+      'about/spring-2021',
+      'about/spring-2021-pilot-study',
     ]
   },
 };
