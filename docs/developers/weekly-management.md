@@ -31,7 +31,7 @@ Make sure to run `npm install` under `/scrapers` to install the dependencies if 
 
 ### Top Level Interface
 
-More information can be found in [scrapers/overview](docs/developers/scrapers/overview.md).
+More information can be found in [scrapers/overview](scrapers/overview.md).
 
 The code is stored under ``/scrapers/main.js``.
 
