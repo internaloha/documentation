@@ -1,6 +1,5 @@
 ---
-title: Weekly Management
-sidebar_label: Weekly Management
+title: Site Management
 ---
 
 To ensure that the internship information in InternAloha is up to date, we must re-run the scrapers and redeploy the site with the updated data on a regular basis. Here's how to do that:
@@ -31,7 +30,7 @@ A sample invocation will involve the following:
 
 Be sure that no errors occur. If errors occur, contact the team using the #internaloha-chat channel to discuss.
 
-## Quality Assurance
+## Perform Quality Assurance
 
 Follow the [Running the UI locally](./ui/running) to bring up the site locally with the updated data. Now check the site to see if everything looks OK. For example:
 

@@ -27,7 +27,7 @@ module.exports = {
           'developers/ui/deploying',
         ],
       },
-      'developers/weekly-management',
+      'developers/site-management',
       {
         type: 'category',
         label: 'Checklists',
