@@ -30,15 +30,12 @@ Explanation of how the top level interface works:
 
 ## Production Mode 
 
-* Runs any or all of the scripts without opening up a browser.
+* Runs all the scripts without opening up a browser.
 * Does not produce any logging output, unless they are errors.
 * Does not require a control-c to terminate.
 * Does all necessary post-processing of the data.
 
-**NOTE:** At the moment, it only works for ``acm``, ``aexpress``, and ``apple`` because it involves changing the 
-scraper code, and I am waiting for them to be refactored:  
-
-Allows us to specify whether or not to run in headless or not when using top level command line.
+Allows us to specify whether to run in headless or not when using top level command line.
 ```javascript
   // in the main function for scrapers, add the parameter headless
   async function main(headless) {
@@ -71,5 +68,6 @@ In ``package.json``, change the script to include main. For example:
     "aexpress": "node scrapers/aexpress.js main",
     "apple": "node scrapers/apple.js main",
     "scrapers": "node scrapers/main.js"
-  },```
+  },
+```
 
