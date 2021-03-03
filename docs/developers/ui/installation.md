@@ -10,7 +10,7 @@ Here is how to install the InternAloha site for development or deployment.
 
 To install the system, first [install NPM](https://www.npmjs.com/get-npm), then checkout [InternAloha](https://github.com/internaloha/internaloha) from GitHub.
 
-Next, cd into internaloha\src and run ``npm install``:
+Next, cd into internaloha\ui and run ``npm install``:
 
 ```
 $ npm install
