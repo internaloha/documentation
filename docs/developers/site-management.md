@@ -10,12 +10,16 @@ If you haven't already, [Install the UI](./ui/installation) and [Install the Scr
 
 ## Run the unattended scrapers
 
-Invoke `npm run scrapers production` to run all of the unattended scrapers.  This currently takes about XX minutes to complete.
+Invoke `npm run scrapers production` to run all the unattended scrapers.  This currently takes about an hour to 
+complete.
 
 Here is a sample invocation:
 
 ```
-sample invocation here
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers production
+
+> scrapers@0.1.0 scrapers C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
+> node scrapers/main.js "production"
 ```
 
 Be sure that no errors occur. If errors occur, contact the team using the #internaloha-chat channel to discuss.
@@ -26,7 +30,23 @@ Now run the attended scrapers: `npm run angellist` and `npm run internships`.
 
 A sample invocation will involve the following:
 
-(sample invocation information here. Might involve screenshots.)
+```
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run internships
+
+> scrapers@0.1.0 internships C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
+> node scrapers/internships.js
+```
+
+<img src="/documentation/img/internship-recaptcha.png"/>
+
+```
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run angellist
+
+> scrapers@0.1.0 angellist C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
+> node scrapers/angellist.js
+```
+
+<img src="/documentation/img/angellist-recaptcha.png"/>
 
 Be sure that no errors occur. If errors occur, contact the team using the #internaloha-chat channel to discuss.
 
