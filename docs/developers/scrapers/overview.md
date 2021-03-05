@@ -4,7 +4,7 @@ title: Overview
 
 The goal of InternAloha scrapers is to collect information about computer science internships from as many online resources as possible.
 
-Currently, this process is semi-automated.  On a regular basis, hopefully weekly, a member of the InternAloha team will invoke the scraper programs.  These programs collect information from various sites, and represent it in a "canonical" format.  T
+Currently, this process is semi-automated.  On a regular basis, hopefully weekly, a member of the InternAloha team will invoke the scraper programs.  These programs collect information from various sites, and represent it in a "canonical" format.  
 
 This format is made available to the InternAloha web application and used to display internship information to users.
 
