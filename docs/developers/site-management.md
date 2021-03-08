@@ -26,12 +26,12 @@ Be sure that no errors occur. If errors occur, contact the team using the #inter
 
 ## Run attended scrapers
 
-Now run the attended scrapers: `npm run angellist` and `npm run internships`.
+Now run the attended scrapers: `npm run scrapers angellist dev close` and `npm run scrapers internships dev close`.
 
 A sample invocation will involve the following:
 
 ```
-C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run internships
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers internships dev open
 
 > scrapers@0.1.0 internships C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/internships.js
@@ -40,7 +40,7 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run internships
 <img src="/documentation/img/internship-recaptcha.png"/>
 
 ```
-C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run angellist
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers angellist dev open
 
 > scrapers@0.1.0 angellist C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/angellist.js
@@ -67,7 +67,7 @@ Once you are satisfied the update is OK, then follow the [UI Deployment](./ui/de
 Running those scripts (upon completion) will do all necessary post-processing of the data.
 
 
-## Trouble shooting
+## Troubleshooting
 
 ### Location filter has bogus information (eg. Shows 'Hardware Engineer')
 
@@ -75,11 +75,12 @@ Solution: Look at which scrapers cause the bogus information. In most cases, it'
      
 ### Far too many listings with the same dates for Posted and Last Updated
 
-This usually means the scraper might be accidently using the same datetime for both. Look at which scrapers it came from and troubleshoot from there.
+This usually means the scraper might be accidentally using the same datetime for both. Look at which scrapers it came from and troubleshoot from there.
     
 ### Site doesn't load at all
 
-Look at the data jsons (`internaloha/src/src/data/`). It could be that one of the data doesn't have the correct format. You can also look at `InternshipFilters.jsx` and comment out each scraper to find the issue.
+Look at the data jsons (`internaloha/ui/src/data/`). It could be that one of the data doesn't have the correct format.
+You can also look at `InternshipFilters.jsx` and comment out each scraper to find the issue.
 
 ### Running `[Scraper Name]` prints out error logs
 
