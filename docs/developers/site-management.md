@@ -8,10 +8,11 @@ To ensure that the internship information in InternAloha is up to date, we must 
 
 If you haven't already, [Install the UI](./ui/installation) and [Install the Scrapers](./scrapers/installation).
 
+Be sure to set up the configuration file with your credentials for certain scrapers.
+
 ## Run the unattended scrapers
 
-Invoke `npm run scrapers production` to run all the unattended scrapers.  This currently takes about an hour to 
-complete.
+Invoke `npm run scrapers production` to run all the unattended scrapers. These are scrapers that can run without any user interaction.  They currently take about an hour to complete.
 
 Here is a sample invocation:
 
@@ -24,11 +25,14 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers produ
 
 Be sure that no errors occur. If errors occur, contact the team using the #internaloha-chat channel to discuss.
 
-## Run attended scrapers
+## Run the attended scrapers
 
-Now run the attended scrapers: `npm run scrapers angellist dev close` and `npm run scrapers internships dev close`.
+Now run the scrapers that require user interaction to complete (the "attended" scrapers). There are currently two attended scrapers: angellist and Chegg Internships:
 
-A sample invocation will involve the following:
+### Internships
+
+Run the Internships scraper in attended mode with `npm run scrapers internships dev open`:
+
 
 ```
 C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers internships dev open
@@ -37,7 +41,13 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers inter
 > node scrapers/internships.js
 ```
 
-<img src="/documentation/img/internship-recaptcha.png"/>
+Here is an example screen shot requiring user input:
+
+<img style={{border: "1px solid black"}} src="/documentation/img/internship-recaptcha.png"/>
+
+### Angel List
+
+Run the Angel List scraper in attended mode with `npm run scrapers angellist dev open`:
 
 ```
 C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers angellist dev open
@@ -46,7 +56,9 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers angel
 > node scrapers/angellist.js
 ```
 
-<img src="/documentation/img/angellist-recaptcha.png"/>
+Here is an example screen shot requiring user input:
+
+<img style={{border: "1px solid black"}} src="/documentation/img/angellist-recaptcha.png"/>
 
 Be sure that no errors occur. If errors occur, contact the team using the #internaloha-chat channel to discuss.
 
