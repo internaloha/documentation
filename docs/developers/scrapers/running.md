@@ -36,8 +36,7 @@ There are two basic differences between development mode and production mode. Fi
 
 ## Attended Scrapers
 
-The following scrapers must be run in attended mode so that the user can enter recaptchas as necessary. Please note 
-that `open` can also be substituted with `close`.
+The following scrapers must be run in attended mode so that the user can enter recaptchas as necessary. 
 
 #### Sites that require attended mode: 
 | Script | Explanation |
