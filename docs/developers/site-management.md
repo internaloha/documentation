@@ -24,7 +24,7 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers produ
 
 Starting scraper apple at 9:02 PM
 Starting scraper acm at 9:02 PM
-Starting scraper acm at 9:02 PM
+Starting scraper aexpress at 9:02 PM
 Starting scraper linkedin at 9:02 PM
 Starting scraper monster at 9:02 PM
 Starting scraper simplyhired at 9:02 PM
