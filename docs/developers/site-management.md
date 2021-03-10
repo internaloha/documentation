@@ -21,6 +21,35 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers produ
 
 > scrapers@0.1.0 scrapers C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/main.js "production"
+
+Starting scraper apple at 9:02 PM
+Starting scraper acm at 9:02 PM
+Starting scraper acm at 9:02 PM
+Starting scraper linkedin at 9:02 PM
+Starting scraper monster at 9:02 PM
+Starting scraper simplyhired at 9:02 PM
+Starting scraper Cisco at 9:02 PM
+Starting scraper zipRecruiter at 9:02 PM
+Starting scraper stackoverflow at 9:02 PM
+Starting scraper indeed at 9:02 PM
+Starting scraper idealist at 9:02 PM
+Starting scraper hawaiislack at 9:02 PM
+Starting scraper Glassdoor at 9:02 PM
+Starting scraper nsf-reu at 9:02 PM
+Finished scraper nsf-reu at 9:02 PM (a few seconds ago)
+Finished scraper stackoverflow at 9:03 PM (a few seconds ago)
+Finished scraper idealist at 9:03 PM (a few seconds ago)
+Finished scraper aexpress at 9:03 PM (a few seconds ago)
+Finished scraper hawaiislack at 9:03 PM (a few seconds ago)
+Finished scraper cisco at 9:03 PM (a few seconds ago)
+Finished scraper glassdoor at 9:03 PM (a minute ago)
+Finished scraper indeed at 9:03 PM (a minute ago)
+Finished scraper zipRecruiter at 9:03 PM (a minute ago)
+Finished scraper linkedin at 9:04 PM (a minute ago)
+Finished scraper simplyhired at 9:04 PM (a minute ago)
+Finished scraper apple at 9:04 PM (2 minutes ago)
+Finished scraper acm at 9:09 PM (7 minutes ago)
+Finished scraper monster at 9:43 PM (40 minutes ago)
 ```
 
 Be sure that no errors occur. If errors occur, contact the team using the #internaloha-chat channel to discuss.
@@ -39,6 +68,7 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers inter
 
 > scrapers@0.1.0 internships C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/internships.js
+Starting scraper internships (chegg) at 9:02 PM
 ```
 
 Here is an example screen shot requiring user input:
@@ -54,6 +84,7 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers angel
 
 > scrapers@0.1.0 angellist C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/angellist.js
+Starting scraper angellist at 9:02 PM
 ```
 
 Here is an example screen shot requiring user input:
