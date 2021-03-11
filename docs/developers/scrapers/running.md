@@ -57,8 +57,8 @@ eg. `npm run scrapers apple dev open`
 
 #### Legal inputs:
 * apple
-* aCM
-* aExpress
+* acm
+* aexpress
 * angellist
 * cisco
 * glassdoor
