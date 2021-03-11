@@ -17,39 +17,37 @@ Invoke `npm run scrapers production` to run all the unattended scrapers. These a
 Here is a sample invocation:
 
 ```
-C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers production
-
 > scrapers@0.1.0 scrapers C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/main.js "production"
 
-Starting scraper apple at 9:02 PM
-Starting scraper acm at 9:02 PM
-Starting scraper aexpress at 9:02 PM
-Starting scraper linkedin at 9:02 PM
-Starting scraper monster at 9:02 PM
-Starting scraper simplyhired at 9:02 PM
-Starting scraper Cisco at 9:02 PM
-Starting scraper zipRecruiter at 9:02 PM
-Starting scraper stackoverflow at 9:02 PM
-Starting scraper indeed at 9:02 PM
-Starting scraper idealist at 9:02 PM
-Starting scraper hawaiislack at 9:02 PM
-Starting scraper Glassdoor at 9:02 PM
-Starting scraper nsf-reu at 9:02 PM
-Finished scraper nsf-reu at 9:02 PM (a few seconds ago)
-Finished scraper stackoverflow at 9:03 PM (a few seconds ago)
-Finished scraper idealist at 9:03 PM (a few seconds ago)
-Finished scraper aexpress at 9:03 PM (a few seconds ago)
-Finished scraper hawaiislack at 9:03 PM (a few seconds ago)
-Finished scraper cisco at 9:03 PM (a few seconds ago)
-Finished scraper glassdoor at 9:03 PM (a minute ago)
-Finished scraper indeed at 9:03 PM (a minute ago)
-Finished scraper zipRecruiter at 9:03 PM (a minute ago)
-Finished scraper linkedin at 9:04 PM (a minute ago)
-Finished scraper simplyhired at 9:04 PM (a minute ago)
-Finished scraper apple at 9:04 PM (2 minutes ago)
-Finished scraper acm at 9:09 PM (7 minutes ago)
-Finished scraper monster at 9:43 PM (40 minutes ago)
+Starting scraper apple at 11:55 AM
+Starting scraper acm at 11:55 AM
+Starting scraper aexpress at 11:55 AM
+Starting scraper linkedin at 11:55 AM
+Starting scraper monster at 11:55 AM
+Starting scraper simplyhired at 11:55 AM
+Starting scraper Cisco at 11:55 AM
+Starting scraper zipRecruiter at 11:55 AM
+Starting scraper stackoverflow at 11:55 AM
+Starting scraper indeed at 11:55 AM
+Starting scraper idealist at 11:55 AM
+Starting scraper hawaiislack at 11:55 AM
+Starting scraper Glassdoor at 11:55 AM
+Starting scraper nsf-reu at 11:55 AM
+Elapsed time for nsf-reu: a few seconds | 93 listings scraped
+Elapsed time for hawaiislack: a few seconds | 0 listings scraped
+Elapsed time for stackoverflow: a few seconds | 6 listings scraped
+Elapsed time for idealist: a few seconds | 0 listings scraped
+Elapsed time for simplyHired: a few seconds | 2 listings scraped
+Elapsed time for aexpress: a few seconds | 8 listings scraped
+Elapsed time for indeed: a few seconds | 2 listings scraped
+Elapsed time for glassdoor: a few seconds | 0 listings scraped
+Elapsed time for Cisco: a few seconds | 9 listings scraped
+Elapsed time for zipRecruiter: a minute | 23 listings scraped
+Elapsed time for linkedin: a minute | 7 listings scraped
+Elapsed time for apple: 2 minutes | 40 listings scraped
+Elapsed time for acm: 7 minutes | 156 listings scraped
+Elapsed time for monster: an hour | 224 listings scraped
 ```
 
 Be sure that no errors occur. If errors occur, contact the team using the #internaloha-chat channel to discuss.
@@ -69,6 +67,7 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers inter
 > scrapers@0.1.0 internships C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/internships.js
 Starting scraper internships (chegg) at 9:02 PM
+Elapsed time for internships (chegg): 34 minutes | 51 listings scraped
 ```
 
 Here is an example screen shot requiring user input:
@@ -85,6 +84,7 @@ C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers angel
 > scrapers@0.1.0 angellist C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/angellist.js
 Starting scraper angellist at 9:02 PM
+Elapsed time for angellist: 23 minutes | 36 listings scraped
 ```
 
 Here is an example screen shot requiring user input:

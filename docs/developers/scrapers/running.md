@@ -42,7 +42,7 @@ The following scrapers must be run in attended mode so that the user can enter r
 | Script | Explanation |
 | ------- | ----- |
 |  `npm run scrapers angellist dev open` | angellist |
-|  `npm run scrapers internships dev open` | Chegg (Internships) |
+|  `npm run scrapers chegg dev open` | Chegg (Internships) |
 
 ## Running Scrapers Individually
 
@@ -56,21 +56,21 @@ eg. `npm run scrapers apple dev open`
 |  `npm run scrapers scraperName dev close` |  Runs the scraper in development mode, does not open up browser. |
 
 #### Legal inputs:
-* Apple
-* ACM
-* AExpress
-* Angellist
-* Cisco
-* Glassdoor
-* HawaiiSlack
-* Indeed
-* Internships (chegg)
-* Idealist
-* Linkedin
-* Monster
-* NSF-REU
-* SimplyHired
-* ZipRecruiter
+* apple
+* aCM
+* aExpress
+* angellist
+* cisco
+* glassdoor
+* hawaiislack
+* indeed
+* chegg
+* idealist
+* linkedin
+* monster
+* nsf_reu
+* simplyhired
+* ziprecruiter
 
 
 
