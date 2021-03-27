@@ -56,13 +56,13 @@ Be sure that no errors occur. If errors occur, contact the team using the #inter
 
 Now run the scrapers that require user interaction to complete (the "attended" scrapers). There are currently two attended scrapers: angellist and Chegg Internships:
 
-### Internships
+### Chegg
 
-Run the Internships scraper in attended mode with `npm run scrapers internships dev open`:
+Run the Chegg scraper in attended mode with `npm run scrapers internships dev open`:
 
 
 ```
-C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers internships dev open
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers chegg dev open
 
 > scrapers@0.1.0 internships C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/internships.js
@@ -70,7 +70,7 @@ Starting scraper internships (chegg) at 9:02 PM
 Elapsed time for internships (chegg): 34 minutes | 51 listings scraped
 ```
 
-Here is an example screen shot requiring user input:
+Here is an example screenshot requiring user input:
 
 <img style={{border: "1px solid black"}} src="/documentation/img/internship-recaptcha.png"/>
 
@@ -87,7 +87,7 @@ Starting scraper angellist at 9:02 PM
 Elapsed time for angellist: 23 minutes | 36 listings scraped
 ```
 
-Here is an example screen shot requiring user input:
+Here is an example screenshot requiring user input:
 
 <img style={{border: "1px solid black"}} src="/documentation/img/angellist-recaptcha.png"/>
 
@@ -95,7 +95,8 @@ Be sure that no errors occur. If errors occur, contact the team using the #inter
 
 ## Perform Quality Assurance
 
-Follow the [Running the UI locally](./ui/running) to bring up the site locally with the updated data. Now check the site to see if everything looks OK. For example:
+Follow the [Running the UI locally](./ui/running.md) to bring up the site locally with the updated data. Now check the site to 
+see if everything looks OK. For example:
 
 1. Look through and try the locations filter
 2. Look through and try the skills filter
@@ -105,7 +106,8 @@ Follow the [Running the UI locally](./ui/running) to bring up the site locally w
 
 ## Redeploy UI
 
-Once you are satisfied the update is OK, then follow the [UI Deployment](./ui/deploying) instructions to redeploy the site with the updated information.
+Once you are satisfied the update is OK, then follow the [UI Deployment](./ui/deploying.md) instructions to redeploy 
+the site with the updated information.
 
 Running those scripts (upon completion) will do all necessary post-processing of the data.
 

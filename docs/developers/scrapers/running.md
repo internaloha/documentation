@@ -32,7 +32,7 @@ For sites listed as "Login?", the developer must establish a login and password 
 
 ## Run an individual scraper
 
-All of the above scrapers can be run individually in order to support development and maintenance.  To do so, invoke:
+All the above scrapers can be run individually in order to support development and maintenance.  To do so, invoke:
 
 ```
 $ npm run scrapers <name> [dev|production] [open|closed]
@@ -61,9 +61,9 @@ As before, specify `dev` vs. `production` to indicate the amount of logging outp
 You must run each scraper that requires attended mode individually. Use the following command:
 
 ```
-$ npm run scrapers <name> [dev|production] open
+$ npm run scrapers <name> dev open
 ```
 
-You can choose `dev` or `production`, but you must run the scraper in `open` mode so you can respond to recaptchas or other requests for human interaction.
+You must run the scraper in `open` mode so you can respond to recaptchas or other requests for human interaction.
 
 
