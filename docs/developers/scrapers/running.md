@@ -20,7 +20,7 @@ We currently provide scrapers for the following sites:
 | indeed | https://www.indeed.com/ |  | | Internship |
 | linkedin | https://www.linkedin.com/ |  | | Computer Science |
 | monster | https://www.monster.com | | | Computer Science Intern |
-| nsf-reu | https://www.nsf.gov/crssprgm/reu | | | |
+| nsf_reu | https://www.nsf.gov/crssprgm/reu | | | |
 | simplyhired | https://www.simplyhired.com | | | Internship |
 | stackoverflow | https://stackoverflow.com/jobs | | | Internship |
 | soc | https://studentopportunitycenter.com | | Y | Computer Science Internship |
@@ -35,7 +35,7 @@ For sites listed as "Login?", the developer must establish a login and password 
 All the above scrapers can be run individually in order to support development and maintenance.  To do so, invoke:
 
 ```
-$ npm run scrapers <name> [dev|production] [open|closed]
+$ npm run scrapers [<name>|unattended] [dev|prod] [open|closed]
 ```
 
 Replace `<name>` by the scraper name listed above.
@@ -52,7 +52,7 @@ To run all scrapers that do not require supervision, simply omit the scraper nam
 $ npm run scrapers [dev|production] [open|closed]
 ```
 
-For normal site management, the preferred command is `npm run scrapers production closed`.
+For normal site management, the preferred command is `npm run scrapers unattended`.
 
 As before, specify `dev` vs. `production` to indicate the amount of logging output, and `open` vs. `closed` to indicate if you wish a browser window to open.
 
