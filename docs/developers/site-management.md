@@ -12,42 +12,54 @@ Be sure to set up the configuration file with your credentials for certain scrap
 
 ## Run the unattended scrapers
 
-Invoke `npm run scrapers production` to run all the unattended scrapers. These are scrapers that can run without any user interaction.  They currently take about an hour to complete.
+Invoke `npm run scrapers unattended --save statistics` to run all the unattended scrapers. These are scrapers that can 
+run without 
+any user 
+interaction.  They currently take about 3 hours to complete.
 
 Here is a sample invocation:
 
 ```
-> scrapers@0.1.0 scrapers C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
-> node scrapers/main.js "production"
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers unattended --save statistics
 
-Starting scraper apple at 11:55 AM
-Starting scraper acm at 11:55 AM
-Starting scraper aexpress at 11:55 AM
-Starting scraper linkedin at 11:55 AM
-Starting scraper monster at 11:55 AM
-Starting scraper simplyhired at 11:55 AM
-Starting scraper Cisco at 11:55 AM
-Starting scraper zipRecruiter at 11:55 AM
-Starting scraper stackoverflow at 11:55 AM
-Starting scraper indeed at 11:55 AM
-Starting scraper idealist at 11:55 AM
-Starting scraper hawaiislack at 11:55 AM
-Starting scraper Glassdoor at 11:55 AM
-Starting scraper nsf-reu at 11:55 AM
-Elapsed time for nsf-reu: a few seconds | 93 listings scraped
-Elapsed time for hawaiislack: a few seconds | 0 listings scraped
-Elapsed time for stackoverflow: a few seconds | 6 listings scraped
+> scrapers@0.1.0 scrapers C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
+> node scrapers/main.js "statistics"
+
+Starting scraper apple at 6:10 PM
+Starting scraper acm at 6:10 PM
+Starting scraper aexpress at 6:10 PM
+Starting scraper linkedin at 6:10 PM
+Starting scraper monster at 6:10 PM
+Starting scraper simplyhired at 6:10 PM
+Starting scraper Cisco at 6:10 PM
+Starting scraper zipRecruiter at 6:10 PM
+Starting scraper indeed at 6:10 PM
+Starting scraper idealist at 6:10 PM
+Starting scraper hawaiislack at 6:10 PM
+Starting scraper Glassdoor at 6:10 PM
+Starting scraper nsf-reu at 6:10 PM
+Starting scraper stackoverflow at 6:10 PM
+Elapsed time for nsf-reu: a few seconds | 96 listings scraped
 Elapsed time for idealist: a few seconds | 0 listings scraped
-Elapsed time for simplyHired: a few seconds | 2 listings scraped
-Elapsed time for aexpress: a few seconds | 8 listings scraped
-Elapsed time for indeed: a few seconds | 2 listings scraped
-Elapsed time for glassdoor: a few seconds | 0 listings scraped
-Elapsed time for Cisco: a few seconds | 9 listings scraped
-Elapsed time for zipRecruiter: a minute | 23 listings scraped
-Elapsed time for linkedin: a minute | 7 listings scraped
+Elapsed time for Cisco: a few seconds | 5 listings scraped
+Elapsed time for stackoverflow: a few seconds | 10 listings scraped
+Elapsed time for aexpress: a few seconds | 5 listings scraped
+Elapsed time for monster: a few seconds | 0 listings scraped
+Elapsed time for hawaiislack: a few seconds | 1 listings scraped
 Elapsed time for apple: 2 minutes | 40 listings scraped
-Elapsed time for acm: 7 minutes | 156 listings scraped
-Elapsed time for monster: an hour | 224 listings scraped
+Elapsed time for zipRecruiter: 2 minutes | 40 listings scraped
+Elapsed time for acm: 5 minutes | 117 listings scraped
+Elapsed time for linkedin: 34 minutes | 521 listings scraped
+Elapsed time for indeed: 39 minutes | 204 listings scraped
+Elapsed time for simplyHired: 2 hours | 1005 listings scraped
+Elapsed time for glassdoor: 3 hours | 900 listings scraped
+Finished scraping!
+Now parsing...
+Finished parsing!
+Now getting statistics...
+Finished getting statistics.
+Now saving data to CSV files.
+Completed.
 ```
 
 Be sure that no errors occur. If errors occur, contact the team using the #internaloha-chat channel to discuss.
@@ -58,11 +70,11 @@ Now run the scrapers that require user interaction to complete (the "attended" s
 
 ### Chegg
 
-Run the Chegg scraper in attended mode with `npm run scrapers internships dev open`:
+Run the Chegg scraper in attended mode with `npm run scrapers internships dev open --save statistics`:
 
 
 ```
-C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers chegg dev open
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers chegg dev open --save statistics
 
 > scrapers@0.1.0 internships C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/internships.js
@@ -79,7 +91,7 @@ Here is an example screenshot requiring user input:
 Run the Angel List scraper in attended mode with `npm run scrapers angellist dev open`:
 
 ```
-C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers angellist dev open
+C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers angellist dev open --save statistics
 
 > scrapers@0.1.0 angellist C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper
 > node scrapers/angellist.js

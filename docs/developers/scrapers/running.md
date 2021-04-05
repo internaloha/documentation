@@ -52,7 +52,14 @@ To run all scrapers that do not require supervision, simply omit the scraper nam
 $ npm run scrapers [dev|production] [open|closed]
 ```
 
-For normal site management, the preferred command is `npm run scrapers unattended`.
+For normal site management, the preferred command is `npm run scrapers unattended --save statistics`.
+
+Information about `--save statistics` flag:
+
+It saves the statistics to a CSV file. Over time, this file will provide a history of that scraper's performance.
+- The timestamp of when the scraping session began
+- The total number of entries it found from the site.
+- The number of those entries for which it collected canonical data fields.
 
 As before, specify `dev` vs. `production` to indicate the amount of logging output, and `open` vs. `closed` to indicate if you wish a browser window to open.
 
@@ -61,7 +68,7 @@ As before, specify `dev` vs. `production` to indicate the amount of logging outp
 You must run each scraper that requires attended mode individually. Use the following command:
 
 ```
-$ npm run scrapers <name> dev open
+$ npm run scrapers <name> dev open --save statistics
 ```
 
 You must run the scraper in `open` mode so you can respond to recaptchas or other requests for human interaction.
