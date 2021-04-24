@@ -46,22 +46,21 @@ If you specify `open`, then a browser window will open on your screen and allow 
 
 ## Run all scrapers that support unattended mode
 
-To run all scrapers that do not require supervision, simply omit the scraper name:
+To run all scrapers that do not require supervision, specify "unattended".  Usually, you will also want to generate statistics on the run as well. Here is the command:
 
 ```
-$ npm run scrapers [dev|production] [open|closed]
+$ npm run scrapers unattended --save statistics
 ```
 
-For normal site management, the preferred command is `npm run scrapers unattended --save statistics`.
+## Saving Statistics
 
-Information about `--save statistics` flag:
+The `--save statistics` argument generates useful statistics about the performance of a scraper and appends them to a CSV file.  Over time, this file will provide a history of that scraper's performance. This information includes:
 
-It saves the statistics to a CSV file. Over time, this file will provide a history of that scraper's performance.
-- The timestamp of when the scraping session began
-- The total number of entries it found from the site.
-- The number of those entries for which it collected canonical data fields.
+  * The timestamp of when the scraping session began
+  * The total number of entries it found from the site.
+  * The number of those entries for which it collected canonical data fields.
 
-As before, specify `dev` vs. `production` to indicate the amount of logging output, and `open` vs. `closed` to indicate if you wish a browser window to open.
+The goal of these historical statistics is to help us detect when the performance of a scraper degrades (i.e. is not finding listings) but not in a way that results in an error. 
 
 ## Run a scraper that requires attended mode
 

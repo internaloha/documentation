@@ -12,10 +12,7 @@ Be sure to set up the configuration file with your credentials for certain scrap
 
 ## Run the unattended scrapers
 
-Invoke `npm run scrapers unattended --save statistics` to run all the unattended scrapers. These are scrapers that can 
-run without 
-any user 
-interaction.  They currently take about 3 hours to complete.
+Invoke `npm run scrapers unattended --save statistics` to run all the unattended scrapers. These are scrapers that can run without  any user interaction.  They currently take about 3 hours to complete.
 
 Here is a sample invocation:
 
@@ -66,12 +63,11 @@ Be sure that no errors occur. If errors occur, contact the team using the #inter
 
 ## Run the attended scrapers
 
-Now run the scrapers that require user interaction to complete (the "attended" scrapers). There are currently two attended scrapers: angellist and Chegg Internships:
+Now run the scrapers that require user interaction to complete (the "attended" scrapers). There are currently two attended scrapers: Angellist and Chegg Internships:
 
 ### Chegg
 
 Run the Chegg scraper in attended mode with `npm run scrapers internships dev open --save statistics`:
-
 
 ```
 C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers chegg dev open --save statistics
