@@ -60,7 +60,7 @@ The `--save statistics` argument generates useful statistics about the performan
   * The total number of entries it found from the site.
   * The number of those entries for which it collected canonical data fields.
 
-The goal of these historical statistics is to help us detect when the performance of a scraper degrades (i.e. is not finding listings) but not in a way that results in an error. 
+The goal of these historical statistics is to help us detect when the performance of a scraper degrades (i.e. is not finding listings) but not in a way that results in an error.
 
 ## Run a scraper that requires attended mode
 
