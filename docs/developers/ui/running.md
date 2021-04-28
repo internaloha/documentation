@@ -2,7 +2,7 @@
 title: Running
 ---
 
-Invoke `npm start` to run the UI locally:
+Change directories into the ui/ directory, then invoke `npm start` to run the UI locally:
 
 ```
 $ npm start
@@ -17,6 +17,8 @@ You can now view src in the browser.
 Note that the development build is not optimized.
 To create a production build, use npm run build.
 ```
+
+Note that it will appears under http://localhost:3000/internaloha.
 
 Here is what the running system should look like:
 

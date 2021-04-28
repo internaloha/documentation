@@ -67,7 +67,7 @@ Now run the scrapers that require user interaction to complete (the "attended" s
 
 ### Chegg
 
-Run the Chegg scraper in attended mode with `npm run scrapers internships dev open --save statistics`:
+Run the Chegg scraper in attended mode with `npm run scrapers chegg dev open --save statistics`:
 
 ```
 C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers chegg dev open --save statistics
