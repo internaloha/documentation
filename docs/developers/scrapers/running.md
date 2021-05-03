@@ -35,7 +35,7 @@ For sites listed as "Login?", the developer must establish a login and password 
 All the above scrapers can be run individually in order to support development and maintenance.  To do so, invoke:
 
 ```
-$ npm run scrapers [<name>|unattended] [dev|prod] [open|closed]
+npm run scrapers [<name>|unattended] [dev|prod] [open|closed]
 ```
 
 Replace `<name>` by the scraper name listed above.
@@ -49,7 +49,7 @@ If you specify `open`, then a browser window will open on your screen and allow 
 To run all scrapers that do not require supervision, specify "unattended".  Usually, you will also want to generate statistics on the run as well. Here is the command:
 
 ```
-$ npm run scrapers unattended --save statistics
+npm run scrapers unattended --save statistics
 ```
 
 ## Saving Statistics
@@ -67,7 +67,7 @@ The goal of these historical statistics is to help us detect when the performanc
 You must run each scraper that requires attended mode individually. Use the following command:
 
 ```
-$ npm run scrapers <name> dev open --save statistics
+npm run scrapers <name> dev open --save statistics
 ```
 
 You must run the scraper in `open` mode so you can respond to recaptchas or other requests for human interaction.

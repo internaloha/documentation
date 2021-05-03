@@ -12,7 +12,13 @@ Be sure to set up the configuration file with your credentials for certain scrap
 
 ## Run the unattended scrapers
 
-Invoke `npm run scrapers unattended --save statistics` to run all the unattended scrapers. These are scrapers that can run without  any user interaction.  They currently take about 3 hours to complete.
+To run all the scrapers that can support unattended operation, invoke:
+
+```
+npm run scrapers unattended --save statistics
+```
+
+This command could take anywhere from 1 to 3 hours to complete, depending upon which scrapers execute successfully.
 
 Here is a sample invocation:
 
@@ -67,7 +73,13 @@ Now run the scrapers that require user interaction to complete (the "attended" s
 
 ### Chegg
 
-Run the Chegg scraper in attended mode with `npm run scrapers chegg dev open --save statistics`:
+Run the Chegg scraper in attended mode with the following command:
+
+```
+npm run scrapers chegg dev open --save statistics
+```
+
+Here is sample output:
 
 ```
 C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers chegg dev open --save statistics
@@ -84,7 +96,13 @@ Here is an example screenshot requiring user input:
 
 ### Angel List
 
-Run the Angel List scraper in attended mode with `npm run scrapers angellist dev open`:
+Run the Angel List scraper in attended mode with  the following command:
+
+```
+npm run scrapers angellist dev open --save-statistics
+```
+
+Here is sample output:
 
 ```
 C:\Users\JenniferHsu\Documents\GitHub\internaloha\scraper>npm run scrapers angellist dev open --save statistics
