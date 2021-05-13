@@ -1,12 +1,12 @@
 ---
-title: Spring 2021 Pilot Study
+title: Pilot Study (Dec 2020)
 ---
 
 ## Overview
 
 In December, 2020 and January, 2021, we performed a simple pilot study to obtain user feedback on the InternAloha user interface and functionality.
 
-Two InternAloha students interviewed two ICS student subjects over Discord.  The interviewers led the subjects through the site, asked them questions, and filled out a form to gather information during the interview. Unfortunately, two different versions of the form were used during the interviews, but useful information was still obtained.
+Two InternAloha developers each interviewed two ICS student subjects over Discord, for a total of four interviews.  The developers led the subjects through the site, asked them questions, and filled out a form to gather information during the interview. Unfortunately, two different versions of the form were used during the interviews, but useful information was still obtained.
 
 All subjects completed an Informed Consent document prior to the interview. The Informed Consent document is available [here](https://forms.gle/ZnGnXbeVTyRVhk3DA).
 
