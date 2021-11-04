@@ -12,10 +12,7 @@ module.exports = {
     navbar: { title: 'InternAloha', logo: { alt: 'InternAloha Logo', src: 'img/internaloha-logo.png', },
       items: [
         { to: 'docs/overview/motivation', activeBasePath: 'docs', label: 'Documentation', position: 'right', },
-        { to: 'blog', label: 'Blog', position: 'right' },
         { href: 'https://github.com/internaloha', label: 'GitHub', position: 'right', },
-        { href: 'https://github.com/internaloha/internaloha/projects/3', label: 'Project Board', position: 'right'},
-
       ],
     },
     footer: {

@@ -3,7 +3,10 @@ title: Motivation
 ---
 
 ## Overview
-The InternAloha project results from student feedback regarding our original implementation of "Internship" opportunities in RadGrad.  RadGrad can only provide information about a relatively small number of "curated" local internships, since each opportunity must be manually entered into the system by a faculty member, advisor, or administrator. After deployment, use, and evaluation of RadGrad during year one, we discovered that our current support for internships does not meet the needs of students, but could be augmented to provide a more scalable and efficient solution.
+
+The InternAloha project results from student feedback regarding our original implementation of "Internship" opportunities in RadGrad.  Previous versions of RadGrad could only provide information about a relatively small number of "curated" local internships, since each opportunity must be manually entered into the system by a faculty member, advisor, or administrator. After deployment, use, and evaluation of RadGrad, we discovered that our current support for internships does not meet the needs of students, but could be augmented to provide a more scalable and efficient solution.
+
+InternAloha is our response to these findings. InternAloha is an automated system for collecting internship listings from a variety of public sites and making them available within RadGrad.
 
 ## Barriers
 
@@ -13,7 +16,7 @@ First, there are many online sites providing information about internships, incl
 
 Second, this plethora of access points means that students complain about spending many fruitless hours searching for an internship that is compatible with their skills and interests. Ultimately, the internship search process is a constraint satisfaction problem: which internships is the student qualified for? Which ones reflect their interests? Which ones satisfy geographical or financial constraints?  Can the student complete the application prior to the deadline? Intriguingly, the internship search process can yield interesting information for future use, including a better understanding of what qualifications the student should acquire in order to qualify for an internship in the future.
 
-An insight from the first year of the RadGrad project is that RadGrad already collects several key pieces of information about the student that can be useful to the internship search process: for example, their grade level, their approximate GPA, their interests, and (based on their courses and extracurricular activities) their skills (such as how many years of programming experience, their programming languages, etc). The InternAloha project seeks ways to exploit the information in RadGrad, along with a Hawaii-first orientation, to provide a superior Internship search experience for students.
+An insight from the RadGrad project is that RadGrad already collects several key pieces of information about the student that can be useful to the internship search process: for example, their grade level, their approximate GPA, their interests, and (based on their courses and extracurricular activities) their skills (such as how many years of programming experience, their programming languages, etc). The InternAloha project seeks ways to exploit the information in RadGrad, along with a Hawaii-first orientation, to provide a superior Internship search experience for students.
 
 ## Goals
 

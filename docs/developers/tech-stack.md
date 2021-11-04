@@ -52,22 +52,6 @@ To assess your knowledge, you should be able to easily complete exercises such a
   * [Jamba Juice 1](http://courses.ics.hawaii.edu/ics314f20/morea/javascript-2/experience-jamba-juice-1.html) (and subsequent)
   * [UH Degree Data Manipulation](http://courses.ics.hawaii.edu/ics314f20/morea/javascript-3/experience-underscore-2.html)
 
-## React and Semantic UI
-
-InternAloha uses the Semantic UI CSS framework in combination with React.  If you are not familiar, please review:
-
-  * [Semantic UI](http://courses.ics.hawaii.edu/ics314f20/modules/ui-frameworks/)
-  * [React](http://courses.ics.hawaii.edu/ics314f20/modules/react/)
-
-To assess your knowledge, please complete an exercise such as:
-
-  * [Island Snow in React](http://courses.ics.hawaii.edu/ics314f20/morea/react/experience-islandsnow-react.html)
-
-## Uniforms
-
-For form display, validation, and processing, we use [Uniforms](https://uniforms.tools/).
-
-To assess your knowledge, complete the Digits application as indicated in the next section.
 
 ## Issue Driven Project Management
 
@@ -79,7 +63,7 @@ Note that IDPM constrains: (a) the way issues are defined, created, and managed;
 
 To assess your knowledge, please review the:
 
-  * [Active Project Boards](https://github.com/internaloha/internaloha/projects)
+  * [RadGrad2 Project Boards](https://github.com/radgrad/radgrad2/projects)
 
 
 

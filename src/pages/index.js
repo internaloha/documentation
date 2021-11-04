@@ -65,9 +65,6 @@ function Home() {
         </div>
       </header>
       <main>
-        <div className="text--center">
-          <img width='1000px' src='img/internaloha.home.png' />
-        </div>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
