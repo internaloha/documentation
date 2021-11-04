@@ -7,16 +7,14 @@ module.exports = {
     ],
     'Developer Guide': [
       'developers/overview',
-      'developers/tech-stack',
-      {
-        type: 'category',
-        label: 'Scrapers',
-        items: [
-          'developers/scrapers/overview',
-          'developers/scrapers/installation',
-          'developers/scrapers/running',
-        ],
-      },
+      'developers/installation',
+      'developers/invocation',
+      'developers/implementation',
+      'developers/production',
+      'developers/tips',
+      'developers/legal',
+      'developers/test-scraper',
+      'developers/resources',
     ],
     Documentation: [
       'documentation/manage-this-site',
@@ -24,8 +22,8 @@ module.exports = {
       'documentation/use-mdx',
     ],
     'Pilot Studies': [
-      'about/pilot-study-dec-2020',
-      'about/pilot-study-may-2021',
+      'pilot-studies/pilot-study-dec-2020',
+      'pilot-studies/pilot-study-may-2021',
     ]
   },
 };
